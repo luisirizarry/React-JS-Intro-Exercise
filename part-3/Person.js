@@ -14,7 +14,6 @@ const Person = ({ name, age, hobbies }) => {
     return (
         <div>
             <p>Learn some information about {correctName}</p>
-            <h3>{reply}</h3>
             <ul>
                 {hobbies.map((h, index) => (
                     <li key={index}>
@@ -22,6 +21,7 @@ const Person = ({ name, age, hobbies }) => {
                     </li>
                 ))}
             </ul>
+            <h3>{reply}</h3>
         </div>
     );
 };
